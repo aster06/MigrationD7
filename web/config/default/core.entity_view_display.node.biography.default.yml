@@ -1,0 +1,28 @@
+uuid: df965770-8d86-42e3-b842-8b0c17fa0bbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.biography.body
+    - node.type.biography
+  module:
+    - text
+    - user
+id: node.biography.default
+targetEntityType: node
+bundle: biography
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

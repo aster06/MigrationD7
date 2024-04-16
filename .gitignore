@@ -15,6 +15,7 @@
 
 # Ignore Drupal's file directory
 
+drupal7db.sql
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
