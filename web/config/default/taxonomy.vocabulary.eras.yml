@@ -1,0 +1,8 @@
+uuid: f8dd2d80-c3fb-42f0-be59-3a6dc9180164
+langcode: en
+status: true
+dependencies: {  }
+name: Eras
+vid: eras
+description: 'Time periods'
+weight: -10

@@ -1,0 +1,8 @@
+uuid: a6e551ee-586d-40fa-8d92-8e7dc667b60e
+langcode: en
+status: true
+dependencies: {  }
+name: Region
+vid: region
+description: 'Area of the world'
+weight: -9

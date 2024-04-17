@@ -13,10 +13,11 @@ dependencies:
     - field.field.node.article.field_regions
     - field.field.node.article.field_tags
     - field.field.node.article.field_topics
-    - image.style.wide
+    - image.style.large
     - node.type.article
   module:
     - comment
+    - file
     - image
     - text
     - user
@@ -32,7 +33,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: content
   comment:
     type: comment_default
@@ -43,16 +44,48 @@ content:
     third_party_settings: {  }
     weight: 110
     region: content
+  field_author:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_download:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_eras:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_image:
     type: image
     label: hidden
     settings:
       image_link: ''
-      image_style: wide
+      image_style: large
       image_loading:
-        attribute: eager
+        attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
+    region: content
+  field_regions:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_tags:
     type: entity_reference_label
@@ -62,14 +95,17 @@ content:
     third_party_settings: {  }
     weight: 10
     region: content
+  field_topics:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
-hidden:
-  field_author: true
-  field_download: true
-  field_eras: true
-  field_regions: true
-  field_topics: true
+hidden: {  }
