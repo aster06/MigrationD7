@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_eras
+    - field.field.node.page.field_regions
+    - field.field.node.page.field_topics
     - node.type.page
   module:
     - text
@@ -25,4 +28,7 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_eras: true
+  field_regions: true
+  field_topics: true

@@ -5,6 +5,18 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.biography.body
+    - field.field.node.biography.field_birth_date
+    - field.field.node.biography.field_birth_location
+    - field.field.node.biography.field_death_date
+    - field.field.node.biography.field_death_location
+    - field.field.node.biography.field_eras
+    - field.field.node.biography.field_first_name
+    - field.field.node.biography.field_image
+    - field.field.node.biography.field_last_name
+    - field.field.node.biography.field_legacy_id
+    - field.field.node.biography.field_regions
+    - field.field.node.biography.field_role
+    - field.field.node.biography.field_topics
     - node.type.biography
   module:
     - text
@@ -27,4 +39,16 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_birth_date: true
+  field_birth_location: true
+  field_death_date: true
+  field_death_location: true
+  field_eras: true
+  field_first_name: true
+  field_image: true
+  field_last_name: true
+  field_legacy_id: true
+  field_regions: true
+  field_role: true
+  field_topics: true

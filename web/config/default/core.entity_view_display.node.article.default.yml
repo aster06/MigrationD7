@@ -6,8 +6,13 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_author
+    - field.field.node.article.field_download
+    - field.field.node.article.field_eras
     - field.field.node.article.field_image
+    - field.field.node.article.field_regions
     - field.field.node.article.field_tags
+    - field.field.node.article.field_topics
     - image.style.wide
     - node.type.article
   module:
@@ -62,4 +67,9 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_author: true
+  field_download: true
+  field_eras: true
+  field_regions: true
+  field_topics: true

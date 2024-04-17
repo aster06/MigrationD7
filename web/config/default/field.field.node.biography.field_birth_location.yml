@@ -1,0 +1,19 @@
+uuid: ca28c221-fc5d-4992-96f0-593e2bce8165
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_birth_location
+    - node.type.biography
+id: node.biography.field_birth_location
+field_name: field_birth_location
+entity_type: node
+bundle: biography
+label: 'Birth Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

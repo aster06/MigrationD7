@@ -1,0 +1,19 @@
+uuid: 183177ba-db17-49d1-a1a0-d4efdb5cf9c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_death_location
+    - node.type.biography
+id: node.biography.field_death_location
+field_name: field_death_location
+entity_type: node
+bundle: biography
+label: 'Death Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

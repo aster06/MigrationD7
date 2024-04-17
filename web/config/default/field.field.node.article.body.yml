@@ -14,9 +14,9 @@ field_name: body
 entity_type: node
 bundle: article
 label: Body
-description: ''
-required: false
-translatable: true
+description: "The full text of the article; you may also click 'Edit Summary' to provide a short (<600 character) summary of the article."
+required: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

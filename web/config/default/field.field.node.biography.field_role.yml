@@ -1,0 +1,19 @@
+uuid: 8ed83890-e32d-448b-9238-1f0b17479bf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_role
+    - node.type.biography
+id: node.biography.field_role
+field_name: field_role
+entity_type: node
+bundle: biography
+label: Role
+description: "For example 'Abolitionist', 'Nurse' or 'General'."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
