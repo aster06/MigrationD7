@@ -80,6 +80,10 @@ process:
     -
       plugin: get
       source: body
+  body/0/format:
+      plugin: default_value
+      default_value: basic_html
+
   field_legacy_id:
     -
       plugin: get
