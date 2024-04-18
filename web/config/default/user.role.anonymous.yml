@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - media
     - search
     - system
 _core:
@@ -15,3 +16,4 @@ permissions:
   - 'access content'
   - 'search content'
   - 'use advanced search'
+  - 'view media'

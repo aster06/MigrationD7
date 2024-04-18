@@ -28,6 +28,8 @@ module:
   history: 0
   image: 0
   link: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
@@ -35,6 +37,7 @@ module:
   migrate_drupal_ui: 0
   migrate_plus: 0
   migrate_upgrade: 0
+  migration_to_media: 0
   mysql: 0
   node: 0
   options: 0
