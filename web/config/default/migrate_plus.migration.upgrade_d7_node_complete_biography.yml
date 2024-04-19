@@ -83,6 +83,9 @@ process:
   body/0/format:
     plugin: default_value
     default_value: basic_html
+  body/0/value:
+    plugin: links_migration
+    source: body/0/value
   field_legacy_id:
     -
       plugin: get
@@ -99,16 +102,13 @@ process:
     -
       plugin: get
       source: field_role
-  field_image:
+
+  field_media_image:
     -
-      plugin: sub_process
-      source: field_image
-      process:
-        target_id: fid
-        alt: alt
-        title: title
-        width: width
-        height: height
+      plugin: migration_lookup
+      migration: custom_migration_media
+      source: field_image/0/fid
+
   field_birth_location:
     -
       plugin: get
