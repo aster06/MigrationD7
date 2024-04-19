@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.biography.field_image
     - field.field.node.biography.field_last_name
     - field.field.node.biography.field_legacy_id
+    - field.field.node.biography.field_media_image
     - field.field.node.biography.field_regions
     - field.field.node.biography.field_role
     - field.field.node.biography.field_topics
@@ -20,6 +21,7 @@ dependencies:
     - node.type.biography
   module:
     - image
+    - media_library
     - path
     - text
 id: node.biography.default
@@ -115,6 +117,13 @@ content:
     region: content
     settings:
       placeholder: ''
+    third_party_settings: {  }
+  field_media_image:
+    type: media_library_widget
+    weight: 121
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   field_regions:
     type: entity_reference_autocomplete

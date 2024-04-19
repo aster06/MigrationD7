@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.biography.field_image
     - field.field.node.biography.field_last_name
     - field.field.node.biography.field_legacy_id
+    - field.field.node.biography.field_media_image
     - field.field.node.biography.field_regions
     - field.field.node.biography.field_role
     - field.field.node.biography.field_topics
@@ -71,6 +72,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_media_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
     region: content
   field_regions:
     type: entity_reference_label
