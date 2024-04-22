@@ -1,0 +1,7 @@
+type: module
+name: Links migrate
+description: 'Custom migration links.'
+package: custom
+core_version_requirement: ^10
+dependencies:
+  - drupal:migrate

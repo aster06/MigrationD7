@@ -1,0 +1,23 @@
+uuid: e1ae772f-3218-47ed-a0bb-f377e7569f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regions
+    - node.type.biography
+id: node.biography.field_regions
+field_name: field_regions
+entity_type: node
+bundle: biography
+label: Regions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

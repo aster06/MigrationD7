@@ -1,0 +1,52 @@
+uuid: da21da3f-10df-4baf-97bc-e1d91670ede1
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.article
+    - node.type.page
+  module:
+    - block
+    - contact
+    - contextual
+    - filter
+    - node
+    - path
+    - search
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+id: site_manager
+label: 'Site Manager'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'administer blocks'
+  - 'administer contact forms'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer search'
+  - 'administer shortcuts'
+  - 'administer taxonomy'
+  - 'administer themes'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create page content'
+  - 'create url aliases'
+  - 'customize shortcut links'
+  - 'delete any article content'
+  - 'delete any page content'
+  - 'delete own page content'
+  - 'edit any article content'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'search content'
+  - 'switch shortcut sets'
+  - 'use advanced search'
+  - 'use text format full_html'
+  - 'view own unpublished content'

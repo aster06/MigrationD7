@@ -1,0 +1,23 @@
+uuid: 43445a16-2587-4856-a8b2-b270f700d20a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_id
+    - node.type.biography
+id: node.biography.field_legacy_id
+field_name: field_legacy_id
+entity_type: node
+bundle: biography
+label: 'Legacy ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

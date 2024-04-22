@@ -1,0 +1,23 @@
+uuid: 3d0770ce-2b90-423a-9321-2847f1d44849
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eras
+    - node.type.biography
+id: node.biography.field_eras
+field_name: field_eras
+entity_type: node
+bundle: biography
+label: Eras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: b381d5b4-e2fd-4378-ac14-8d7451d09c21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eras
+    - node.type.article
+id: node.article.field_eras
+field_name: field_eras
+entity_type: node
+bundle: article
+label: Eras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    sort:
+      field: _none
+field_type: entity_reference

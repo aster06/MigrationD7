@@ -1,0 +1,152 @@
+uuid: 17759206-b555-4bd5-8b5b-3c83e7b8197d
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_complete_battle
+class: Drupal\node\Plugin\migrate\D7NodeTranslation
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node complete (Battle)'
+source:
+  plugin: d7_node_complete
+  node_type: battle
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  content_translation_source:
+    -
+      plugin: get
+      source: source_langcode
+  comment_node_battle/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_source_name:
+    -
+      plugin: get
+      source: field_source_name
+  field_outcome:
+    -
+      plugin: get
+      source: field_outcome
+  field_campaign:
+    -
+      plugin: get
+      source: field_campaign
+  field_start_date:
+    -
+      plugin: sub_process
+      source: field_start_date
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: Y-m-d
+          source: value
+  field_start_year:
+    -
+      plugin: get
+      source: field_start_year
+  field_end_date:
+    -
+      plugin: sub_process
+      source: field_end_date
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: Y-m-d
+          source: value
+  field_end_year:
+    -
+      plugin: get
+      source: field_end_year
+  field_regions:
+    -
+      plugin: sub_process
+      source: field_regions
+      process:
+        target_id: tid
+  field_topics:
+    -
+      plugin: sub_process
+      source: field_topics
+      process:
+        target_id: tid
+  field_legacy_id:
+    -
+      plugin: get
+      source: field_legacy_id
+  field_location:
+    -
+      plugin: get
+      source: field_location
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: battle
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance

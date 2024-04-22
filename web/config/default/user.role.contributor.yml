@@ -1,0 +1,16 @@
+uuid: 9a20010d-1b5c-4a37-88dd-759c7b8dcc24
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - node
+id: contributor
+label: Contributor
+weight: 4
+is_admin: null
+permissions:
+  - 'create article content'
+  - 'edit own article content'
+  - 'view own unpublished content'

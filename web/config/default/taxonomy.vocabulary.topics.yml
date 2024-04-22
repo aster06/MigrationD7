@@ -1,0 +1,8 @@
+uuid: 5ab8e4d0-f42f-4a69-aab2-638d911f5a23
+langcode: en
+status: true
+dependencies: {  }
+name: Topics
+vid: topics
+description: 'Topics are tags which may be broad themes or specific events.'
+weight: -8
